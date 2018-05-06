@@ -1,0 +1,29 @@
+Se realizar el proyecto realizado en clases
+el alcance sera el siguiente:
+El proyecto consiste en exponer servicios web Rest que realicen las siguientes operaciones:
+
+?	CRUD de usuarios. Los usuarios tienen mínimamente: Nombres, apellidos, CI, fecha de nacimiento, login, password.
+?	CRUD de clientes. Los clientes tienen mínimamente: CI/NIT, Razón social, monto límite, saldo actual.
+?	CRUD de proveedores. Los proveedores tienen mínimamente CI/NIT, Razón social, saldo actual.
+?	CRUD de productos (código, nombre, precio de compra, precio de venta, stock) .
+?	Registro de ventas. Cliente, fecha y hora, monto total, cajero, listado de productos con cantidades, precio unitario y precio total.,  
+?	Registro de compras. Proveedor, fecha y hora, monto total, cajero, listado de productos con cantidades, precio unitario y precio total.
+?	Cuando se realice una compra o venta, se debe registrar el movimiento de productos (Código de compra o código de venta según sea ingreso o salida, fecha, cantidad, nuevo stock)
+?	Registro de pagos de clientes. Cliente, fecha y hora, monto del pago, cajero.
+?	Registro de pagos a proveedores. Proveedor, fecha y hora, monto del pago, cajero.
+?	Obtiene los siguientes reportes
+?	Listado de movimientos de un producto en un rango de tiempo
+?	Estado de cuenta (ventas y pagos) de un cliente.
+?	Estado de cuenta (compras y pagos) de un proveedor.
+?	Obtener el stock valorado actual del sistema.
+?	Listado de inicios de sesión en un rango de tiempo.
+
+Deben cumplirse las siguientes reglas:
+?	La eliminación debe ser lógica, no pueden eliminarse registros que ya tengan actividades, por ejemplo un cliente al que ya se le haya vendido o un proveedor al que se le haya comprado.
+?	Las tablas deben tener la fecha de creación, última modificación y eliminación y el id del usuario de creación, última modificación y eliminación.
+?	Cada cliente tiene un límite de endeudamiento el cual no puede ser rebasado.
+?	Un cliente puede realizar como máximo 3 compras en el mes, a menos que tenga un saldo a favor suficiente para pagar la compra realizada.
+?	Un cliente no puede cambiar su número de CI.
+?	No pueden existir clientes con números de CI repetidos.
+?	El tiempo de validez del token de sesión debe ser de 2 minutos.
+
