@@ -30,7 +30,7 @@
 		</property>
 		<property name="packagesToScan">
 			<array>
-				<value>bo.gob.egpp.almacen.model</value>
+				<value>gery.rivera.almacen.model</value>
 			</array>
 		</property>
 	</bean>
@@ -38,7 +38,7 @@
         <property name="jndiName" value="java:/datasources/almacenDS" />
     </bean>
      <jpa:repositories
-        base-package="bo.gob.egpp.almacen.repositories"
+        base-package="gery.rivera.almacen.repositories"
         entity-manager-factory-ref="entityManagerFactory"
         transaction-manager-ref="transactionManager" />
     

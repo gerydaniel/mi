@@ -23,7 +23,7 @@
 		<description></description>
 		<display-name>ClienteServlet</display-name>
 		<servlet-name>ClienteServlet</servlet-name>
-		<servlet-class>bo.gob.egpp.almacen.web.ClienteServlet</servlet-class>
+		<servlet-class>gery.rivera.almacen.web.ClienteServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ClienteServlet</servlet-name>
@@ -46,7 +46,7 @@
 <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
        <init-param>
         <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>bo.gob.egpp.almacen.web.resource</param-value>
+            <param-value>gery.rivera.almacen.web.resource</param-value>
         </init-param>
 </servlet>
 <servlet-mapping>
