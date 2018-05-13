@@ -34,7 +34,7 @@ public class ClienteServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/*protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
  			String operacion = request.getParameter("op");
  			if(operacion == null) {
@@ -96,5 +96,5 @@ public class ClienteServlet extends HttpServlet {
 			
 		}
 		
-	}	
+	}	*/
 }
